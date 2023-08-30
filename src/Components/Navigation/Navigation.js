@@ -1,6 +1,6 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
-
+import './Navigation.css';
 
 const NavigationBar = () => {
     const [activeLink, setActiveLink] = useState("home");
