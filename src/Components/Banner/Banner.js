@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap"
 import { useState, useEffect } from "react";
+import './Banner.css';
 
 const Banner = () => {
     const [text, setText] = useState('');
