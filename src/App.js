@@ -1,22 +1,25 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavigationBar from './Components/Navigation/Navigation'
-import Banner from './Components/Banner/Banner';
-import Skills from './Components/Skills/Skills';
-import Projects from './Components/Projects/Projects';
-import Contacts from './Components/Contacts/Contacts';
-import Footer from './Components/Footer/Footer';
+import NavigationBar from "./Components/Navigation/Navigation";
+import Footer from "./Components/Footer/Footer";
+import LandingPage from "./Components/LandingPage/LandingPage";
+import ErrorPage from './Components/ErrorPage/ErrorPage';
+
 
 function App() {
   return (
     <div className="App">
-      <NavigationBar />
-      <Banner />
-      <Skills />
-      <Projects />
-      <Contacts />
-      <Footer />
+      <Router>
+        <NavigationBar />
+        <Routes>
+          <Route exact path="/" element={<LandingPage />} />
+          <Route path='*' element={<ErrorPage />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
