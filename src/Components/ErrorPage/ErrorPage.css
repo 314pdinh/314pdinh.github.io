@@ -1,0 +1,32 @@
+.error-page {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+}
+
+.image-container {
+    width: 30%;
+    /* background-image: url('../../assets/img/line-friends-peek.gif'); */
+    background-image: url('../../assets/img/catError.gif');
+    /* background-image: url('../../assets/img/error.gif'); */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.text-container {
+    color: black;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
