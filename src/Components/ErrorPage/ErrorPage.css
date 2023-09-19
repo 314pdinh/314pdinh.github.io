@@ -13,8 +13,8 @@
 
 .image-container {
     width: 30%;
-    /* background-image: url('../../assets/img/line-friends-peek.gif'); */
-    background-image: url('../../assets/img/catError.gif');
+    background-image: url('../../assets/img/line-friends-peek.gif');
+    /* background-image: url('../../assets/img/catError.gif'); */
     /* background-image: url('../../assets/img/error.gif'); */
     background-size: 100% auto;
     background-repeat: no-repeat;
