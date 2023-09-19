@@ -42,7 +42,7 @@ const NavigationBar = () => {
                             onClick={() => onUpdateActiveLink('home')}>
                             Home
                         </Nav.Link>
-                        <Nav.Link href="#about-me"
+                        <Nav.Link href="/about-me"
                             className={activeLink === 'about-me' ? 'active navbar-link' : 'navbar-link'}
                             onClick={() => onUpdateActiveLink('about-me')}>
                             About Me
@@ -57,7 +57,7 @@ const NavigationBar = () => {
                             onClick={() => onUpdateActiveLink('projects')}>
                             Projects
                         </Nav.Link>
-                        <Nav.Link href="#resume"
+                        <Nav.Link href="/resume"
                             className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'}
                             onClick={() => onUpdateActiveLink('resume')}>
                             Resume

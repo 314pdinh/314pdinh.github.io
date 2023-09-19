@@ -14,7 +14,7 @@ const Banner = () => {
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi! I'm Peter`} <span className="wrap">{text}</span></h1>
                         <p>something something something something something something something something something something something something something something something something something</p>
-                        <button onClick={() => console.log('connect')}>Let's Connect  </button>
+                        <button onClick={() => console.log('connect')}>Let's Connect</button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={''} alt="Header img" />
