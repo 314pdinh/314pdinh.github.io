@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import AboutMe from "./Components/About-Me/About-Me";
+import Resume from "./Components/Resume/Resume";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<LandingPage />} />
           <Route path='/about-me' element={<AboutMe />} />
+          <Route path='/resume' element={<Resume />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
         <Footer />
