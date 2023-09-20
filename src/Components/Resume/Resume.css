@@ -1,0 +1,73 @@
+.resume {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.resume h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.resume h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.resume .summary {
+    margin-bottom: 1em;
+}
+
+.resume .experience {
+    margin-bottom: 1em;
+}
+
+.resume .experience h4 {
+    margin: 0;
+}
+
+.resume .experience p {
+    margin: 0;
+    color: #555;
+}
+
+.resume .education {
+    margin-bottom: 1em;
+}
+
+.resume .skills,
+.resume .languages {
+    margin-bottom: 1em;
+}
+
+.resume .skills ul,
+.resume .languages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resume .skills li,
+.resume .languages li {
+    margin-bottom: 0.5em;
+    padding: 0;
+}
+
+.resume .skills li::before,
+.resume .languages li::before {
+    content: "•";
+    margin-right: 0.5em;
+    color: #555;
+}
+
+.resume .languages li::before {
+    content: "";
+}
+
+.resume .skills li,
+.resume .languages li {
+    display: inline;
+}
