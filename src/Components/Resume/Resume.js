@@ -10,8 +10,8 @@ const Resume = () => {
       {
         title: 'Aircraft Crew Chief',
         company: 'Air Force',
-        location: 'JBMLD, NJ',
-        duration: 'October 2019 - Present',
+        location: 'JBMDL, NJ',
+        duration: 'October 2018 - Present',
         description: "Dedicated to ensuring aircraft's integrity. The main role is to identify discrepancies, perform thorough inspections, keep detailed records, and coordinate maintenance."
       },
       {
@@ -26,16 +26,16 @@ const Resume = () => {
         company: 'VietCapacity',
         location: 'Philadelphia, PA',
         duration: 'October 2020 - Present',
-        description: 'Study Strokes'
+        description: 'Study Strokes, evaluate pt, educate SOMETHING SOMETHING SOMETHING'
       }
     ],
     education: {
       degree: 'Bachelor of Science in Computer Science',
-      institution: 'University of XYZ',
-      location: 'Anytown, USA',
-      graduationYear: '2015'
+      institution: 'App Academy',
+      location: 'Fulltime Online',
+      graduationYear: '2023'
     },
-    skills: ['JavaScript', 'React', 'Node.js', 'HTML/CSS', 'SQL', 'Git', 'Express'],
+    skills: ['JavaScript', 'React', 'Node.js', 'HTML/CSS', 'SQL', 'Git', 'Express', 'Python'],
     languages: ['English (Fluent)', 'Vietnamese (Intermediate)']
   };
 
