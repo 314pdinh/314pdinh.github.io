@@ -59,6 +59,7 @@ const Skills = () => {
                                 
                             </p>
 
+
                         </div>
                     </Col>
                 </Row>
