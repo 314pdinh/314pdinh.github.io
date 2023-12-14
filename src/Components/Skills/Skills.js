@@ -3,28 +3,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css"
 import './Skills.css';
+import codeJoke from '../../assets/img/code.png'
 
 const Skills = () => {
-
-    const responsive = {
-        superLargeDesktop: {
-            // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 3000 },
-            items: 5
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
-        }
-    };
 
     return (
         <section className="skill" id="skills">
@@ -37,11 +18,59 @@ const Skills = () => {
                                 something something something something something
                                 <br></br>here here herehere goes. FUN!
                             </p>
+
+                            <p align="left" className="icon-list">
+                                <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" />
+                                </a>
+
+                                <a href="https://expressjs.com" target="_blank" rel="noreferrer">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" />
+                                </a>
+
+                                <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" />
+                                </a>
+
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" />
+                                </a>
+
+                                <a href="https://nodejs.org" target="_blank" rel="noreferrer">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" />
+                                </a>
+                                <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" />
+                                </a>
+                                <a href="https://postman.com" target="_blank" rel="noreferrer">
+                                    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" />
+                                </a>
+                                <a href="https://www.python.org" target="_blank" rel="noreferrer">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" />
+                                </a>
+                                <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" />
+                                </a>
+                                <a href="https://redux.js.org" target="_blank" rel="noreferrer">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" />
+                                </a>
+                                <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer">
+                                    <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" />
+                                </a>
+                                
+                            </p>
+
+
+
+
+
+                            {/* <img src={codeJoke} alt="codeJoke" /> */}
+
                         </div>
                     </Col>
                 </Row>
             </Container>
-        </section>
+        </section >
     )
 }
 

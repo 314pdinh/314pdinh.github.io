@@ -9,6 +9,8 @@ import LandingPage from "./Components/LandingPage/LandingPage";
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import AboutMe from "./Components/About-Me/About-Me";
 import Resume from "./Components/Resume/Resume";
+import Contacts from "./Components/Contacts/Contacts";
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<LandingPage />} />
           <Route path='/about-me' element={<AboutMe />} />
+          <Route path='/contacts' element={<Contacts />} />
           <Route path='/resume' element={<Resume />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
