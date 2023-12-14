@@ -3,7 +3,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css"
 import './Skills.css';
-import codeJoke from '../../assets/img/code.png'
 
 const Skills = () => {
 
@@ -59,12 +58,6 @@ const Skills = () => {
                                 </a>
                                 
                             </p>
-
-
-
-
-
-                            {/* <img src={codeJoke} alt="codeJoke" /> */}
 
                         </div>
                     </Col>
