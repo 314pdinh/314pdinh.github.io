@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './Navigation.css';
 
 const NavigationBar = () => {
@@ -24,21 +24,27 @@ const NavigationBar = () => {
 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="/"
+                        <Nav.Link
+                            as={Link}
+                            to="/"
                             className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}>
                             Home
                         </Nav.Link>
-                        <Nav.Link href="/about-me"
+                        <Nav.Link
+                            as={Link}
+                            to="/about-me"
                             className={activeLink === 'about-me' ? 'active navbar-link' : 'navbar-link'}>
                             About Me
                         </Nav.Link>
-                        
-                        <Nav.Link href="/resume"
+
+                        <Nav.Link
+                            as={Link}
+                            to="/resume"
                             className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'}>
                             Resume
                         </Nav.Link>
                     </Nav>
-                    
+
                     <span className="navbar-text">
                         <button className="vvd" onClick={navigateToContacts}>
                             <span>Let's Connect</span>
