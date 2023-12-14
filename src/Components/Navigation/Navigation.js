@@ -15,7 +15,7 @@ const NavigationBar = () => {
     return (
         <Navbar>
             <Container>
-                <Navbar.Brand href="/">
+                <Navbar.Brand as={Link} to="/">
                     <img src={''} alt="Logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -27,20 +27,26 @@ const NavigationBar = () => {
                         <Nav.Link
                             as={Link}
                             to="/"
-                            className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}>
+                            className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
+                            onClick={() => setActiveLink('home')}
+                            >
                             Home
                         </Nav.Link>
                         <Nav.Link
                             as={Link}
                             to="/about-me"
-                            className={activeLink === 'about-me' ? 'active navbar-link' : 'navbar-link'}>
+                            className={activeLink === 'about-me' ? 'active navbar-link' : 'navbar-link'}
+                            onClick={() => setActiveLink('about-me')}
+                            >
                             About Me
                         </Nav.Link>
 
                         <Nav.Link
                             as={Link}
                             to="/resume"
-                            className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'}>
+                            className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'}
+                            onClick={() => setActiveLink('resume')}
+                            >
                             Resume
                         </Nav.Link>
                     </Nav>
