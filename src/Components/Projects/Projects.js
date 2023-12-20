@@ -1,6 +1,10 @@
 import React from "react";
 import { Col, Container, Row, Tab, Nav } from "react-bootstrap"
 import demoImg from '../../assets/img/404image.jpeg';
+import project1 from '../../assets/img/project1.png'
+import project2 from '../../assets/img/project2.png'
+import project3 from '../../assets/img/project3.png'
+
 import ProjectCards from './ProjectCards';
 import './Projects.css';
 
@@ -9,18 +13,18 @@ const Projects = () => {
     const projects = [
         {
             title: "GlobeHut (AirBnB Clone)",
-            description: "description 1",
-            imgUrl: demoImg,
+            description: <a href="https://air-bnb-i3g8.onrender.com" className="project-link">https://air-bnb-i3g8.onrender.com</a>,
+            imgUrl: project1,
         },
         {
             title: "ParmazonPrime (Amazon Clone)",
-            description: "description 2",
-            imgUrl: demoImg,
+            description: <a href="https://parmazon-prime.onrender.com" className="project-link">https://parmazon-prime.onrender.com</a>,
+            imgUrl: project2,
         },
         {
             title: "CouchMeOutside",
-            description: "description 3",
-            imgUrl: demoImg,
+            description: <a href="https://couchmeoutside.onrender.com" className="project-link">https://couchmeoutside.onrender.com</a>,
+            imgUrl: project3,
         },
 
     ]
@@ -31,7 +35,7 @@ const Projects = () => {
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p>Something somethiaogjoag agha0j a-yudi da</p>
+                        <p>Showcase of projects</p>
 
                         <Tab.Container id='projects-tabs' defaultActiveKey='first'>
 

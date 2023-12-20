@@ -26,3 +26,17 @@
     color: rgb(9, 9, 229);
     text-decoration: none;
 }
+
+.contact button {
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.contact button:hover {
+    padding: 10px;
+    background-color: white;
+    border-radius: 22px;
+    color: rgb(9, 9, 229);
+    text-decoration: none;
+}

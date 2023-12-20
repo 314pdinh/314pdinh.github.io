@@ -16,7 +16,10 @@ const NavigationBar = () => {
         <Navbar>
             <Container>
                 <Navbar.Brand as={Link} to="/">
-                    <img src={''} alt="Logo" />
+                    {/* <img src={''} alt="Logo" /> */}
+                    <h2>
+                        Peter Dinh
+                    </h2>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>
@@ -29,7 +32,7 @@ const NavigationBar = () => {
                             to="/"
                             className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
                             onClick={() => setActiveLink('home')}
-                            >
+                        >
                             Home
                         </Nav.Link>
                         <Nav.Link
@@ -37,7 +40,7 @@ const NavigationBar = () => {
                             to="/about-me"
                             className={activeLink === 'about-me' ? 'active navbar-link' : 'navbar-link'}
                             onClick={() => setActiveLink('about-me')}
-                            >
+                        >
                             About Me
                         </Nav.Link>
 
@@ -46,7 +49,7 @@ const NavigationBar = () => {
                             to="/resume"
                             className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'}
                             onClick={() => setActiveLink('resume')}
-                            >
+                        >
                             Resume
                         </Nav.Link>
                     </Nav>
