@@ -5,6 +5,10 @@ import memoji from '../../assets/img/memoji.png'
 import './Contacts.css';
 const Contacts = () => {
 
+    const navigateToResume = () => {
+        window.location.href = 'https://docs.google.com/document/d/1qrargzv1UCjZAVT0EIExQNPXM9ysqFKRDF-cZZOeNMc/edit?usp=sharing';
+    };
+
     return (
         <section className="contact">
             <Container>
@@ -43,6 +47,9 @@ const Contacts = () => {
                                         <a href="https://github.com/314pdinh">Github</a>
                                     </h3>
                                 </>
+
+                                <button onClick={navigateToResume}>Official Resume</button>
+
                             </Row>
                         </div>
                     </Col>

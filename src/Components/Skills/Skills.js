@@ -13,10 +13,10 @@ const Skills = () => {
                     <Col>
                         <div className="skill-box">
                             <h2>Skills</h2>
-                            <p>
+                            {/* <p>
                                 something something something something something
                                 <br></br>here here herehere goes. FUN!
-                            </p>
+                            </p> */}
 
                             <p align="left" className="icon-list">
                                 <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
