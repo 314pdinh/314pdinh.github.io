@@ -35,7 +35,8 @@ const Projects = () => {
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p>Showcase of projects</p>
+                        {/* <p>Showcase of projects</p> */}
+                        <br></br>
 
                         <Tab.Container id='projects-tabs' defaultActiveKey='first'>
 

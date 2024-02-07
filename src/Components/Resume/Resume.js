@@ -15,7 +15,7 @@ const Resume = () => {
         description: "Dedicated to ensuring aircraft's integrity. The main role is to identify discrepancies, perform thorough inspections, keep detailed records, and coordinate maintenance."
       },
       {
-        title: 'Pharmacy Technician',
+        title: 'Senior Pharmacy Technician',
         company: 'Rite Aid',
         location: 'Philadelphia, PA',
         duration: 'October 2020 - Present',
@@ -26,15 +26,23 @@ const Resume = () => {
         company: 'VietCapacity',
         location: 'Philadelphia, PA',
         duration: 'October 2020 - Present',
-        description: 'Study Strokes, evaluate pt, educate SOMETHING SOMETHING SOMETHING'
+        description: 'Focused on raising awareness about stroke symptoms and how to get help in an emergent event, through educational sessions and workshops. This research aimed to improve patient care outcomes and empower local healthcare professionals to emerge as influential leaders and advocates within their respective domains.'
       }
     ],
-    education: {
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'App Academy',
-      location: 'Fulltime Online',
-      graduationYear: '2023'
-    },
+    education: [
+      {
+        degree: 'Certification of Software Engineer',
+        institution: 'App Academy',
+        location: 'Fulltime Online',
+        graduationYear: '2023'
+      },
+      {
+        degree: 'N/A',
+        institution: 'Temple University',
+        location: 'Philadelphia, PA',
+        graduationYear: 'N/A'
+      },
+    ],
     skills: ['JavaScript', 'React', 'Node.js', 'HTML/CSS', 'SQL', 'Git', 'Express', 'Python'],
     languages: ['English (Fluent)', 'Vietnamese (Intermediate)']
   };
@@ -63,9 +71,13 @@ const Resume = () => {
 
       <div className="education">
         <h3>Education</h3>
-        <p>{resumeData.education.degree}</p>
-        <p>{resumeData.education.institution} | {resumeData.education.location}</p>
-        <p>Graduated {resumeData.education.graduationYear}</p>
+        {resumeData.education.map((edu, index) => (
+          <div key={index}>
+            <p>Degree: {edu.degree}</p>
+            <p>{edu.institution} | {edu.location}</p>
+            <p>Graduated {edu.graduationYear}</p>
+          </div>
+        ))}
       </div>
 
       <div className="skills">

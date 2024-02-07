@@ -12,8 +12,8 @@ const LandingPage = () => {
   return (
     <>
       <Banner />
-      <Skills />
       <Projects />
+      <Skills />
       <Contacts />
     </>
   );
