@@ -12,18 +12,18 @@ const Projects = () => {
 
     const projects = [
         {
-            title: "GlobeHut (AirBnB Clone)",
-            description: <a href="https://air-bnb-i3g8.onrender.com" className="project-link">https://air-bnb-i3g8.onrender.com</a>,
+            title: <a href="https://air-bnb-i3g8.onrender.com" className="project-link">GlobeHut (AirBnB Clone)</a>,
+            // description: <a href="https://air-bnb-i3g8.onrender.com" className="project-link">https://air-bnb-i3g8.onrender.com</a>,
             imgUrl: project1,
         },
         {
-            title: "ParmazonPrime (Amazon Clone)",
-            description: <a href="https://parmazon-prime.onrender.com" className="project-link">https://parmazon-prime.onrender.com</a>,
+            title: <a href="https://parmazon-prime.onrender.com" className="project-link">ParmazonPrime (Amazon Clone)</a>,
+            // description: <a href="https://parmazon-prime.onrender.com" className="project-link">https://parmazon-prime.onrender.com</a>,
             imgUrl: project2,
         },
         {
-            title: "CouchMeOutside",
-            description: <a href="https://couchmeoutside.onrender.com" className="project-link">https://couchmeoutside.onrender.com</a>,
+            title: <a href="https://couchmeoutside.onrender.com" className="project-link">CouchMeOutside</a>,
+            // description: <a href="https://couchmeoutside.onrender.com" className="project-link">https://couchmeoutside.onrender.com</a>,
             imgUrl: project3,
         },
 
