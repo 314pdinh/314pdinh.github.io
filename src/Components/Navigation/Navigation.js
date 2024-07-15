@@ -56,7 +56,7 @@ const NavigationBar = () => {
 
                     <span className="navbar-text">
                         <button className="vvd" onClick={navigateToContacts}>
-                            <span>Let's Connect</span>
+                            <span>Let's collaborate</span>
                         </button>
                     </span>
                 </Navbar.Collapse>

@@ -51,12 +51,21 @@
     border-radius: 30px;
     overflow: hidden;
     margin-bottom: 24px;
+    width: 100%;
+    max-width: 900px; 
+    height: 300px; 
+}
+
+.proj-imgbx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .proj-imgbx::before {
-    content: "";
     background: linear-gradient(90.21deg, #1a0612 -5.91%, #4A2FBD 111.58%);
-    opacity: 0.65;
+    content: "";
+    opacity: 0.50;
     position: absolute;
     width: 100%;
     height: 0;
@@ -83,9 +92,14 @@
     opacity: 1;
 }
 
-.proj-txtx h4 {
+.proj-txtx h4 a{
     font-size: 30px;
     font-weight: 700;
+    text-decoration: none;
+}
+
+.proj-txtx h4 a:hover{
+    text-decoration: underline;
 }
 
 .proj-txtx span {
